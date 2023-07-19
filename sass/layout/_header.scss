@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as *;
+
+.header {
+  background-color: var(--clr-primary);
+
+  &__logo p {
+    color: var(--clr-white);
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  &__nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: var(--clr-grey);
+  }
+}

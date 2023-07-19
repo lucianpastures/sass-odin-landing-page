@@ -1,9 +1,122 @@
+:root {
+  --clr-primary: #1f2937;
+  --clr-secondary: #3882f6;
+  --clr-white: #f9faf8;
+  --clr-grey: #e5e7eb;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (min-width: 64em) {
+  html {
+    font-size: 75%;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container {
+  max-width: 128rem;
+  position: relative;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header {
+  background-color: var(--clr-primary);
+}
+.header__logo p {
+  color: var(--clr-white);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.header__nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.header__nav-link {
+  text-decoration: none;
+  color: var(--clr-grey);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-baseline {
+  align-items: baseline;
 }
 
 /*# sourceMappingURL=style.css.map */
