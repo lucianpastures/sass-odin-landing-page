@@ -196,6 +196,14 @@ h6 {
   object-fit: contain;
 }
 
+footer {
+  background-color: var(--clr-primary);
+  color: var(--clr-grey);
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
 .info {
   background-color: var(--clr-white);
   padding: 2rem;
