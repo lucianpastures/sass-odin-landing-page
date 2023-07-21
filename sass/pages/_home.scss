@@ -121,3 +121,18 @@
     }
   }
 }
+
+// CTA SECTION
+
+.cta {
+  background-color: var(--clr-white);
+  padding: 2rem;
+
+  @media screen and (min-width: $bp-md) {
+    padding: 4rem 2rem;
+  }
+
+  @media screen and (min-width: $bp-lg) {
+    padding: 6rem 2rem;
+  }
+}

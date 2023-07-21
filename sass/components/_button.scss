@@ -12,4 +12,10 @@
     background-color: var(--clr-secondary);
     color: var(--clr-white);
   }
+
+  &.btn--ghost {
+    background-color: transparent;
+    color: var(--clr-white);
+    border: 2px solid var(--clr-white);
+  }
 }
