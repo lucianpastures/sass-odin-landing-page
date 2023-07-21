@@ -219,6 +219,53 @@ h6 {
   padding: 2rem 0;
 }
 
+.testimonial {
+  background-color: var(--clr-grey);
+  padding: 2rem;
+}
+@media screen and (min-width: 48em) {
+  .testimonial {
+    padding: 4rem 2rem;
+  }
+}
+@media screen and (min-width: 64em) {
+  .testimonial {
+    padding: 6rem 2rem;
+  }
+}
+.testimonial__content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.testimonial__quote {
+  color: var(--clr-primary);
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+}
+.testimonial__author {
+  color: var(--clr-primary);
+  font-size: 2.6rem;
+  font-family: "Roboto Slab", serif;
+  text-align: right;
+}
+.testimonial__author::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 0.4rem;
+  margin-right: 1rem;
+  background-color: var(--clr-primary);
+  vertical-align: middle;
+  margin-bottom: 0.3rem;
+  border-radius: 6px;
+}
+
 .flex {
   display: flex;
 }
